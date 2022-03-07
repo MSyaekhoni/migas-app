@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('produksis', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('tanggalProduksi');
+            $table->date('tanggalProduksi');
             $table->integer('jumlahModal');
             $table->integer('hargaBarangMentah');
             $table->integer('biayaPekerja');
