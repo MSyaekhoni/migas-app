@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('penjualans', function (Blueprint $table) {
             $table->id();
             $table->foreignId('produk_id');
-            $table->timestamp('tanggalPenjualan');
+            $table->date('tanggalPenjualan');
             $table->string('namaProduk');
             $table->integer('jumlahBarang');
             $table->integer('totalHarga');
